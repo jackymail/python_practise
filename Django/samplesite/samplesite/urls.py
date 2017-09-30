@@ -22,13 +22,13 @@ from django.conf.urls import include
 
 
 
-urlpatterns = {
+urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^helloworld/$', hello_world),
     url(r'^$', root_page),
     url(r'^random/(\d+)/$', randome_number),
     url(r'^polls/',include('polls.url')),
-}
+]
 
 
 
